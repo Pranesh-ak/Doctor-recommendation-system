@@ -1,11 +1,18 @@
 body{
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+  background-color: black;
   background-attachment: fixed;
   margin:0;
   font-family: 'Poppins', sans-serif; 
 }
 
+.card{
+  background: rgb(2,0,36);
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(180,10,100,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#form{
+  font-weight: bolder;
+}
 
 #form button{
   background-color: #792099;
@@ -17,6 +24,10 @@ body{
   cursor:pointer;
   font-size:20px;
   width:100%;
+}
+
+h1{
+  color: white;
 }
 
 .main
