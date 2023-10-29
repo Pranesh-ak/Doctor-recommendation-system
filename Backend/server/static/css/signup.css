@@ -5,6 +5,10 @@ body{
   font-family: 'Poppins', sans-serif; 
 }
 
+.desc{
+  height: 200px;
+}
+
 .card{
   background: rgb(2,0,36);
   background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(180,10,100,1) 35%, rgba(0,212,255,1) 100%);
@@ -51,6 +55,7 @@ h1{
   padding:10px;
   border:1px solid rgb(34,193,195) ;
 }
+
 
 .in input:focus{
   outline:0;

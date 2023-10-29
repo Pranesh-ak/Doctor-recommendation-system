@@ -1,13 +1,20 @@
 body{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(121,32,153,1) 86%);
+    background-color: black;
     background-attachment: fixed;
     margin:0;
     font-family: 'Poppins', sans-serif; 
-}
-
-
-#form button{
+  }
+  
+  .card{
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(180,10,100,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  #form{
+    font-weight: bolder;
+  }
+  
+  #form button{
     background-color: #792099;
     color:white;
     border: 1px solid #792099;
@@ -17,44 +24,50 @@ body{
     cursor:pointer;
     font-size:20px;
     width:100%;
-}
-
-.main
-{
+  }
+  
+  h1{
+    color: white;
+  }
+  
+  .main
+  {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.in{
+  }
+  
+  .in{
     display:flex;
     flex-direction:column;
     margin-bottom: 15px;
     width: 400px;
-}
-
-.in input{
+  }
+  
+  .in input{
     border-radius: 5px;
     font-size:20px;
     margin-top:5px;
     padding:10px;
     border:1px solid rgb(34,193,195) ;
-}
-
-.in input:focus{
+  }
+  
+  
+  .in input:focus{
     outline:0;
-}
-
-.in.error{
+  }
+  
+  .in.error{
     color:rgb(242, 18, 18);
     font-size:16px;
     margin-top: 5px;
-}
-
-.in.success input{
+  }
+  
+  .in.success input{
     border-color: #0cc477;
-}
-
-.in.error input{
+  }
+  
+  .in.error input{
     border-color:rgb(206, 67, 67);
-}
+  }
+  

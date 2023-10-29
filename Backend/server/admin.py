@@ -7,3 +7,12 @@ class signupadmin(admin.ModelAdmin):
 
 admin.site.register(Details,signupadmin)
 
+class docadmin(admin.ModelAdmin):
+    list_display=("docid","docname","specialisation","docemail","password","contact","address")
+
+admin.site.register(Doctors,docadmin)
+
+class Appadmin(admin.ModelAdmin):
+    list_display=("appid","docid","pid","appdate","apptime")
+
+admin.site.register(Appointments,Appadmin)

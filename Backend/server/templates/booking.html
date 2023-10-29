@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static "css/appointment.css"%}">
+<script src="{% static "js/appoinment.js" %}" type="text/javascript" defer></script>
+    <div class="card">
+        <div class=" ms-5 mb-5">
+          <h1>Book Appoinment with {{doctor.docname}}</h1>
+        </div>
+      <hr class="my-4">
+        <div class="main">
+            <form method="POST" action="{% url "valid" %}" id="form">
+              {% csrf_token %}
+                <div class="in">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="text" class="form-control" id="date" name="date" placeholder="DD-MM-YYYY">
+                  <div class="error"></div>
+                </div>
+
+                <div class="in">
+                    <label for="time" class="form-label">Time <span>(Working Hours : 09:00 to 18:00)</span></label>
+                    <input type="text" class="form-control" id="time" name="time" placeholder="Enter in 24 Hrs Format">
+                    <div class="error"></div>
+                  </div>
+
+                  <div class="in">
+                    <label for="desc" class="form-label">Discription</label>
+                    <input type="text" class="form-control" id="desc" name="desc" placeholder="Enter your symptoms">
+                    <div class="error"></div>
+                  </div>
+              
+              <hr class="my-4">
+      
+              <button type="submit">Book Appoinment</button>
+      
+              <hr class="my-4">
+            </form>
+        </div>
+      </div>
+      {% endblock  %}
