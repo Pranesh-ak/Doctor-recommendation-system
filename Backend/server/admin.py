@@ -13,6 +13,11 @@ class docadmin(admin.ModelAdmin):
 admin.site.register(Doctors,docadmin)
 
 class Appadmin(admin.ModelAdmin):
-    list_display=("appid","docid","pid","appdate","apptime")
+    list_display=("appid","docid","docname","pid","pname","appdate","apptime")
 
 admin.site.register(Appointments,Appadmin)
+
+class admadmin(admin.ModelAdmin):
+    list_display=("adid","username","password")
+
+admin.site.register(Adminlog,admadmin)

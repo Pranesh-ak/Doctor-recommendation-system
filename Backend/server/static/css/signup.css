@@ -1,6 +1,5 @@
 body{
-  background-color: black;
-  background-attachment: fixed;
+  background-color:azure;
   margin:0;
   font-family: 'Poppins', sans-serif; 
 }
@@ -10,8 +9,7 @@ body{
 }
 
 .card{
-  background: rgb(2,0,36);
-  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(180,10,100,1) 35%, rgba(0,212,255,1) 100%);
+ background-color: azure;
 }
 
 #form{
@@ -31,7 +29,7 @@ body{
 }
 
 h1{
-  color: white;
+  color: black;
 }
 
 .main
@@ -74,3 +72,9 @@ h1{
 .in.error input{
   border-color:rgb(206, 67, 67);
 }
+
+footer ul li{ padding-bottom:6px; line-height: 19px;}
+    footer ul li a{ color: #94a0a3; font-size: 12px; text-decoration: none;}
+    footer ul li a:hover{ color: #f2d99d;}
+    
+    footer h5:after{ background-image:linear-gradient(90deg, #EC8046, #060822); bottom: 0px; content: ""; height: 2px; left: 0; position: absolute; right: 0; width: 50px; border-radius: 10px;}

@@ -73,27 +73,27 @@
                     <div class="col-md-11">
                         <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-4">
                                <div class="col">
-                                 <a href="{% url "bookapp" patient %}" target="_blank" class="tp_widget" id="btn-cta-bb-book-appointment">
+                                 <a href="{% url "addoc" %}" target="_blank" class="tp_widget" id="btn-cta-bb-book-appointment">
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookappt_icon.svg" alt="icon" width="64">
-                                    <h5>Book Appointment</h5>
+                                    <h5>Add Doctors</h5>
                                  </a>
                               </div>
                                <div class="col  d-none d-sm-block">
-                     <a href="{% url "viewapps" patient %}" target="_blank" class="tp_widget" id="btn-cta-bb-book-prohealth">
+                     <a href="{% url "admapps" %}" target="_blank" class="tp_widget" id="btn-cta-bb-book-prohealth">
                         <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookhelathcheck_icon.svg" alt="icon">
-                        <h5>My Appointments</h5>
+                        <h5>View Appointments</h5>
                      </a>
                   </div>
                   <div class="col d-sm-none d-block">
-                     <a href="#" class="tp_widget" id="btn-cta-bb-book-prohealth">
+                     <a href="{% url "getdoc" %}" class="tp_widget" id="btn-cta-bb-book-prohealth">
                         <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookhelathcheck_icon.svg" alt="icon">
-                        <h5>Book Health Check-Up</h5>
+                        <h5>View Doctors</h5>
                      </a>
                   </div>
                               <div class="col">
-                                 <a href="#" id="btn-cta-bb-consult-online" target="_blank" class="tp_widget">
+                                 <a href="{% url "getdoc" %}" id="btn-cta-bb-consult-online" target="_blank" class="tp_widget">
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/buymedicines_icon.svg" alt="icon">
-                                    <h5>Consult Online</h5>
+                                    <h5>View Doctors</h5>
                                  </a>
                               </div>
                               <div class="col">

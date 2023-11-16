@@ -22,8 +22,15 @@ class Doctors(models.Model):
 
 class Appointments(models.Model):
     appid=models.AutoField(primary_key=True,unique=True)
-    docid=models.ForeignKey(Doctors,on_delete=models.CASCADE)
-    pid=models.ForeignKey(Details,on_delete=models.CASCADE)
+    docid=models.IntegerField()
+    docname=models.CharField(max_length=40)
+    pid=models.IntegerField()
+    pname=models.CharField(max_length=40)
     appdate=models.CharField(max_length=8)
     apptime=models.CharField(max_length=5)
+    desc=models.CharField(max_length=150)
 
+class Adminlog(models.Model):
+    adid=models.AutoField(primary_key=True,unique=True)
+    username=models.CharField(max_length=25)
+    password=models.CharField(max_length=25)
